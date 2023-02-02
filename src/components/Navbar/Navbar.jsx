@@ -1,24 +1,19 @@
-import logo from '../../components/images/LogoBN.png';
-import "./Navbar.css"
+import logo from "../../components/images/LogoBN.png";
+import { Button, ImageLogo, InputSpace, Nav } from "./NavbarStyled";
 
-export function Navbar(){
-    return(
-        <>
-        
-        <nav>
-<div className="input-search-space">
-    <i className='bi bi-search'></i>
-    <input type="text" 
-    placeholder='Pesquise por um título'
-    />
-</div>
+export function Navbar() {
+  return (
+    <>
+      <Nav>
+        <InputSpace>
+          <i className="bi bi-search"></i>
+          <input type="text" placeholder="Pesquise por um título" />
+        </InputSpace>
 
-<img src={logo} alt="Logo do Big News"/>
+        <ImageLogo src={logo} alt="Logo do Breaking News" />
 
-<button>Entrar</button>
-        </nav>
-        
-        </>
-       
-    );
+        <Button>Entrar</Button>
+      </Nav>
+    </>
+  );
 }

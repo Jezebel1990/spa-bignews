@@ -1,13 +1,14 @@
 import './App.css'
-import Home  from './components/pages/Home/Home'
+import { GlobalStyled } from './GlobalStyled';
+import Home  from './components/pages/Home/Home';
+
 function App() {
-
- //código javascript
-
   return (
-    //codigo Html
+    <>
+    <GlobalStyled />
     <Home/>
-  )
+    </>
+  );
 }
 
 export default App

@@ -7,7 +7,7 @@ export function Navbar() {
       <Nav>
         <InputSpace>
           <i className="bi bi-search"></i>
-          <input type="text" placeholder="Pesquise por um título" />
+          <input type="text" placeholder="Pesquise um título" />
         </InputSpace>
 
         <ImageLogo src={logo} alt="Logo do Breaking News" />
